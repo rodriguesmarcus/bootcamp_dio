@@ -1,0 +1,34 @@
+body {
+    background-color: #e4e4e4;
+    color: #003056;
+    font-size: 16px;
+    width: 640px;
+    margin: 50px 50px 50px 50px;
+    
+}
+header {
+    margin-top: 40px;
+}
+section{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+h1{
+    color: #4c4076
+}
+p {
+    color: #003056;
+}
+a {
+    color: #f6756b;
+}
+a:hover {
+    color: #8E4B84;
+}
+
+.icon {
+    margin-right: 16px;
+}
+.centralizado{
+    text-align: center;
+}
