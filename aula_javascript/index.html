@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" lang="pt-br">
+    <title>minha página</title>
+    <script type="text/javascript" src="js/main.js"></script>
+</head>
+<!-- Podemos inserir o JS dentro do próprio html usando a tag <script></script> -->
+<!-- O onload serve para carregar uma função quando a página carrega -->
+<body onload="load()">
+    <button type="button" onclick="botao()">clique aqui</button>
+    <button type="button" onclick="agradecer()">agradecimento</button>
+    <button type="button" onclick="redirect2()">redirecionar</button>
+    <h3 id="agradecimento" onclick="redirect()"></h3>
+
+    <p id="agradecimento" onclick="redirect()">teste de clique</p>
+
+    <p id="agradecimento" onmouseover="trocar()">passe o mouse aqui</p>
+    
+    <p id="mousemove" onmouseover="trocaTexto()">passe o mouse aqui</p>
+
+    <p onmouseover="trocaOver(this)" onmouseout="trocaOut(this)">passe o mouse</p>
+
+    <!-- Quando você tem uma gama de opções o onchange permite você coletar o valor
+    sempre que o usuário mudar o campo -->
+
+    <select onchange="funcaoChange(this)">
+        <option value="1">Valor 1</option>
+        <option value="2">Valor 2</option>
+        <option value="3">Valor 3</option>
+    </select>
+</body>
+
+</html>
