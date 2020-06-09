@@ -1,0 +1,17 @@
+{
+  "name": "mochaTest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [],
+  "author": "Marcus Rodrigues <rodriguesmarcus@outlook.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^7.2.0",
+    "sinon": "^9.0.2"
+  }
+}
