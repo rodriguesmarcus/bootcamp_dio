@@ -1,5 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
+from datetime import datetime, timedelta
 # Criando uma tabela eventos
 # por padrão os campos não podem ser deixados em branco ou null
 
@@ -32,3 +33,9 @@ class Evento(models.Model):
         Cria padrão de data que é interpretado corretamente pelo input do HTML5
         '''
         return self.data_evento.strftime('%Y-%m-%dT%H:%M')
+
+    def get_evento_atrasado(self):
+        if self.data_evento < datetime.now():
+            return True
+        else:
+            return False
