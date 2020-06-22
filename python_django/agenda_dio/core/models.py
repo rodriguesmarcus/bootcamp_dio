@@ -22,4 +22,13 @@ class Evento(models.Model):
         return self.titulo
 
     def get_data_evento(self):
+        '''
+        Cria padrão de data Brasileiro
+        '''
         return self.data_evento.strftime('%d/%m/%Y %H:%M')
+
+    def get_data_input_evento(self):
+        '''
+        Cria padrão de data que é interpretado corretamente pelo input do HTML5
+        '''
+        return self.data_evento.strftime('%Y-%m-%dT%H:%M')

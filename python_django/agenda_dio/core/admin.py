@@ -5,7 +5,7 @@ from core.models import Evento
 # para exibir outras informações dentro do nosso BD que por enquanto só exibe o nome
 # do evento
 class EventoAdmin(admin.ModelAdmin):
-    list_display = ('titulo', 'data_evento', 'data_criacao')
+    list_display = ('id', 'titulo', 'data_evento', 'data_criacao')
     list_filter = ('titulo','usuario')
 
 admin.site.register(Evento, EventoAdmin)
